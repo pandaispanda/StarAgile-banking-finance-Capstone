@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-agile-banking-finance-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: star-agile-banking-finance
+  template:
+    metadata:
+      labels:
+        app: star-agile-banking-finance
+    spec:
+      containers:
+      - name: star-agile-banking-finance
+        image: subkamble/star-agile-banking-finance:latest
+        ports:
+        - containerPort: 8083
