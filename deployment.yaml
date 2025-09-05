@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: star-agile-Banking-project
+  name: star-agile-banking-project
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: star-agile-Banking-project
+      app: star-agile-banking-project
   template:
     metadata:
       labels:
-        app: star-agile-Banking-project
+        app: star-agile-banking-project
     spec:
       containers:
-      - name: star-agile-Banking-project
-        image: dockerhub2001/star-agile-Banking-project:latest
+      - name: star-agile-banking-project
+        image: dockerhub2001/star-agile-banking-project:latest
         ports:
         - containerPort: 8081
