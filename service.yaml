@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: star-agile-Banking-project
+  name: star-agile-banking-project
 spec:
   type: NodePort
   selector:
-    app: star-agile-Banking-project
+    app: star-agile-banking-project
   ports:
   - port: 80
     targetPort: 8081
